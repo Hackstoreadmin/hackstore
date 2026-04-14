@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackstore</title>
+    <style>
+        body { background-color: #2c313c; color: #ffffff; font-family: sans-serif; margin: 0; padding: 20px; }
+        .header { display: flex; align-items: center; margin-bottom: 25px; font-size: 26px; }
+        .header img { margin-right: 15px; border-radius: 4px; }
+        .main-wrapper { display: flex; gap: 60px; }
+        .sidebar { display: flex; flex-direction: column; gap: 12px; width: 220px; flex-shrink: 0; }
+        .menu-btn { background-color: #4f5664; color: #ffffff; text-decoration: none; padding: 15px; text-align: center; font-weight: bold; font-size: 15px; border: none; }
+        .active-btn { background-color: #3e4451; }
+        .content-area { display: flex; flex-grow: 1; gap: 40px; justify-content: space-between; }
+        .pay-box { background-color: #3e4451; padding: 25px; border: 1px solid #4f5664; flex-grow: 1; max-width: 600px; }
+        .address { color: #98c379; font-family: monospace; word-break: break-all; display: block; margin: 10px 0; background: #23272a; padding: 10px; }
+        .right-gif img { max-width: 400px; width: 100%; height: auto; border: 1px solid #4f5664; }
+
+        @media (max-width: 900px) {
+            .main-wrapper { flex-direction: column; gap: 30px; }
+            .sidebar { width: 100%; flex-direction: row; flex-wrap: wrap; justify-content: center; }
+            .menu-btn { flex: 1; min-width: 120px; padding: 10px; }
+            .content-area { flex-direction: column; align-items: center; }
+            .pay-box { width: 100%; box-sizing: border-box; }
+            .right-gif img { max-width: 300px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header"><img src="pepe.gif" width="60"> Hackstore</div>
+    <div class="main-wrapper">
+        <div class="sidebar">
+            <a href="3.html" class="menu-btn active-btn">Умови</a>
+            <a href="2.html" class="menu-btn">Скрипти і програми</a>
+            <a href="1.html" class="menu-btn">Інструкції</a>
+        </div>
+        <div class="content-area">
+            <div class="pay-box">
+                <b>АДРЕСА MONERO (XMR):</b>
+                <span class="address">46NjAD4rSp439X8iNhh9ApT2vECfSxDvaLJfTzH2sK2nAn7ATmUhenQVQyEJHLHrYaVUcPdt3xwFyPucDBp5rt1N6droviv</span>
+                <p><b>ІНСТРУКЦІЯ:</b></p>
+                <ul>
+                    <li>Відправ суму згідно ціни товару</li>
+                    <li>Надішли скріншот на hackstoreadmin@proton.me</li>
+                    <li>Очікуй файл протягом декількох діб</li>
+                </ul>
+                <hr style="border:0; border-top:1px solid #4f5664; margin:20px 0;">
+                <p><b>ПРАВИЛА:</b></p>
+                <ul>
+                    <li>Повна передплата</li>
+                    <li>Повернення коштів неможливе</li>
+                </ul>
+            </div>
+            <div class="right-gif"><img src="pepe2.gif"></div>
+        </div>
+    </div>
+</body>
+</html>
